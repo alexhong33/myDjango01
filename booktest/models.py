@@ -10,6 +10,7 @@ class BookInfo(models.Model):
     def __str__(self):
         return self.btitle.encode('utf-8')
 
+
 class HeroInfo(models.Model):
     hname = models.CharField(max_length=10)
     hgender = models.BooleanField()
