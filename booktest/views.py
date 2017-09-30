@@ -12,7 +12,7 @@ def index(request):
     # return HttpResponse(temp.render())
     bookList = BookInfo.objects.all()
     context = {'list': bookList}
-    return render(request, 'booktest/index.html', context)
+    return render(request, 'booktest/index1.html', context)
 
 
 def show(request, id):
